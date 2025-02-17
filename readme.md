@@ -78,3 +78,105 @@ Semantic HTML tags provide meaning to the content they enclose, making it easier
 - `<span>`: Defines a section in a document. It is used to group inline elements.
 
 Using semantic tags improves the accessibility and SEO of a webpage, while non-semantic tags are useful for styling and layout purposes.
+
+
+## CSS Selectors and Basics of CSS
+
+CSS (Cascading Style Sheets) is used to style and layout web pages. It allows you to apply styles to HTML elements and control their appearance.
+
+### CSS Selectors
+
+CSS selectors are used to select the HTML elements you want to style. Here are some basic types of selectors:
+
+- **Element Selector**: Selects all elements of a given type.
+    ```css
+    p {
+        color: blue;
+    }
+    ```
+    This will make all `<p>` elements blue.
+
+- **Class Selector**: Selects all elements with a specific class attribute.
+    ```css
+    .example {
+        font-size: 20px;
+    }
+    ```
+    This will apply a font size of 20px to all elements with the class `example`.
+
+- **ID Selector**: Selects a single element with a specific id attribute.
+    ```css
+    #unique {
+        background-color: yellow;
+    }
+    ```
+    This will apply a yellow background to the element with the id `unique`.
+
+- **Attribute Selector**: Selects elements based on an attribute or attribute value.
+    ```css
+    [type="text"] {
+        border: 1px solid black;
+    }
+    ```
+    This will apply a border to all input elements with the type attribute set to "text".
+
+- **Descendant Selector**: Selects elements that are descendants of another element.
+    ```css
+    div p {
+        margin: 10px;
+    }
+    ```
+    This will apply a margin to all `<p>` elements that are inside a `<div>`.
+
+### Basics of CSS
+
+CSS is composed of rules that specify how HTML elements should be styled. Each rule consists of a selector and a declaration block.
+
+- **Selector**: Indicates which HTML elements the rule applies to.
+- **Declaration Block**: Contains one or more declarations separated by semicolons. Each declaration includes a property and a value.
+
+Example:
+```css
+h1 {
+    color: red;
+    text-align: center;
+}
+```
+In this example, the `h1` selector targets all `<h1>` elements, and the declaration block sets the text color to red and centers the text.
+
+### Common CSS Properties
+
+- **Color**: Sets the color of the text.
+    ```css
+    color: blue;
+    ```
+
+- **Background**: Sets the background color or image.
+    ```css
+    background-color: lightgrey;
+    ```
+
+- **Font**: Sets the font family, size, weight, and style.
+    ```css
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    ```
+
+- **Margin**: Sets the space outside an element.
+    ```css
+    margin: 20px;
+    ```
+
+- **Padding**: Sets the space inside an element.
+    ```css
+    padding: 10px;
+    ```
+
+- **Border**: Sets the border around an element.
+    ```css
+    border: 1px solid black;
+    ```
+
+These are some of the fundamental concepts of CSS that help in styling and designing web pages effectively.
