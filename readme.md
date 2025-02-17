@@ -180,3 +180,27 @@ In this example, the `h1` selector targets all `<h1>` elements, and the declarat
     ```
 
 These are some of the fundamental concepts of CSS that help in styling and designing web pages effectively.
+
+### Adjacent Sibling Selector
+
+The adjacent sibling selector selects an element that is directly after another specific element. It is represented by the `+` symbol.
+
+Example:
+```css
+h1 + p {
+    color: green;
+}
+```
+In this example, the adjacent sibling selector targets any `<p>` element that immediately follows an `<h1>` element and sets its text color to green.
+
+### General Sibling Selector
+
+The general sibling selector selects all elements that are siblings of a specified element. It is represented by the `~` symbol.
+
+Example:
+```css
+h1 ~ p {
+    color: orange;
+}
+```
+In this example, the general sibling selector targets all `<p>` elements that are siblings of an `<h1>` element and sets their text color to orange.
