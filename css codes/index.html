@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first Document</title>
     <style>
-        /* Adjacent Siblings Selector  */
-        h2 + h3 {
+        body {
+            background-color: lightblue;
+        } */
+         h1 {
+            background-color: lightgreen;
+        }
+        /* it define class selector ,tag selector  and  id selector  */
+        .redbaclground {
+            background-color: red;
+        }
+        #changeColor {
             color: red;
         }
-        h1 ~ h2 {
+        /* it define universal selector*/ 
+        *
+        {
             color: green;
         }
+
+        /* It is define descen*/
+
+        div > h1 {
+            color: blue;
+        }
+
+
     </style>
     </head>
     <body>
@@ -32,19 +51,6 @@
         <h2 class="redbaclground"> This is first h2 tag</h2>
         <h1> This is second h1 tag</h1>
         <h2 class="redbaclground"> This is second h2 tag</h2>
-        <h3 class="redbaclground"> This is third h3 tag</h3>
-
-        <h2 class="redbaclground"> This is second h2 tag</h2>
-
-        <h2 class="redbaclground"> This is second h2 tag</h2>
-        <h2 class="redbaclground"> This is second h2 tag</h2>
-        <h3 class="redbaclground"> This is third h3 tag</h3>
-        <h2 class="redbaclground"> This is second h2 tag</h2>
-        <h2 class="redbaclground"> This is second h2 tag</h2>
-
-
-
-
         <h1 id="changeColor"> This is third h1 tag</h1>
 
     </body>
