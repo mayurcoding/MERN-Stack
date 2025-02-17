@@ -204,3 +204,44 @@ h1 ~ p {
 }
 ```
 In this example, the general sibling selector targets all `<p>` elements that are siblings of an `<h1>` element and sets their text color to orange.
+
+
+### Pseudo-Classes
+
+Pseudo-classes are keywords added to selectors that specify a special state of the selected elements. They are used to define the styling of an element when it is in a particular state.
+
+#### Common Pseudo-Classes
+
+- **`:hover`**: Applies when the user designates an element (usually with a pointing device), but does not activate it.
+    ```css
+    a:hover {
+        color: red;
+    }
+    ```
+    This will change the color of a link to red when the user hovers over it.
+
+- **`:visited`**: Applies once the link has been visited by the user.
+    ```css
+    a:visited {
+        color: purple;
+    }
+    ```
+    This will change the color of a link to purple if it has been visited.
+
+- **`:active`**: Applies when an element is being activated by the user (e.g., when a link is being clicked).
+    ```css
+    a:active {
+        color: blue;
+    }
+    ```
+    This will change the color of a link to blue when it is being clicked.
+
+- **`:focus`**: Applies when an element has received focus (e.g., when a user clicks on an input field).
+    ```css
+    input:focus {
+        border-color: green;
+    }
+    ```
+    This will change the border color of an input field to green when it is focused.
+
+Pseudo-classes enhance the interactivity and user experience of a webpage by allowing different styles to be applied based on user actions.
