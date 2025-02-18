@@ -245,3 +245,94 @@ Pseudo-classes are keywords added to selectors that specify a special state of t
     This will change the border color of an input field to green when it is focused.
 
 Pseudo-classes enhance the interactivity and user experience of a webpage by allowing different styles to be applied based on user actions.
+## Summary of CSS Attributes
+
+CSS attributes are used to style and layout HTML elements. Here are some common CSS attributes:
+
+- **Color**: Sets the color of the text.
+    ```css
+    color: blue;
+    ```
+
+- **Background**: Sets the background color or image.
+    ```css
+    background-color: lightgrey;
+    ```
+
+- **Font**: Sets the font family, size, weight, and style.
+```css
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+font-style: italic;
+```
+
+- **Margin**: Sets the space outside an element.
+```css
+margin: 20px;
+```
+
+- **Padding**: Sets the space inside an element.
+```css
+padding: 10px;
+```
+
+- **Border**: Sets the border around an element.
+```css
+border: 1px solid black;
+```
+
+- **Width**: Sets the width of an element.
+```css
+width: 100px;
+```
+
+- **Height**: Sets the height of an element.
+```css
+height: 100px;
+```
+
+- **Display**: Specifies the display behavior of an element.
+```css
+display: block;
+```
+
+- **Position**: Specifies the positioning method of an element.
+```css
+position: absolute;
+```
+
+- **Top, Right, Bottom, Left**: Specifies the offset of an element from its positioned container.
+```css
+top: 10px;
+right: 10px;
+bottom: 10px;
+left: 10px;
+```
+
+- **Float**: Specifies whether an element should float to the left, right, or not at all.
+```css
+float: left;
+```
+
+- **Clear**: Specifies what elements can float beside the cleared element and on which side.
+```css
+clear: both;
+```
+
+- **Overflow**: Specifies what happens if content overflows an element's box.
+```css
+overflow: hidden;
+```
+
+- **Visibility**: Specifies whether an element is visible or hidden.
+```css
+visibility: hidden;
+```
+
+- **Z-index**: Specifies the stack order of an element.
+```css
+z-index: 10;
+```
+
+These attributes are fundamental in controlling the layout and appearance of HTML elements using CSS.
