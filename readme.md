@@ -339,3 +339,112 @@ These attributes are fundamental in controlling the layout and appearance of HTM
 
 
 
+### Pseudo-Elements
+
+Pseudo-elements are keywords added to selectors that allow you to style specific parts of an element. They are used to apply styles to a portion of an element's content.
+
+#### Common Pseudo-Elements
+
+- **`::before`**: Inserts content before the content of an element.
+    ```css
+    p::before {
+        content: "Note: ";
+        font-weight: bold;
+    }
+    ```
+    This will insert the text "Note: " before the content of all `<p>` elements.
+
+- **`::after`**: Inserts content after the content of an element.
+    ```css
+    p::after {
+        content: " End of paragraph.";
+        font-style: italic;
+    }
+    ```
+    This will insert the text " End of paragraph." after the content of all `<p>` elements.
+
+- **`::first-line`**: Applies styles to the first line of a block-level element.
+    ```css
+    p::first-line {
+        color: blue;
+        font-weight: bold;
+    }
+    ```
+    This will make the first line of all `<p>` elements blue and bold.
+
+- **`::first-letter`**: Applies styles to the first letter of a block-level element.
+    ```css
+    p::first-letter {
+        font-size: 200%;
+        color: red;
+    }
+    ```
+    This will make the first letter of all `<p>` elements twice as large and red.
+
+Pseudo-elements enhance the ability to style specific parts of an element's content, providing more control over the presentation of web pages.
+
+### Attribute Selector
+
+The attribute selector in CSS is used to select elements based on the presence or value of a given attribute. It allows you to apply styles to elements that have specific attributes or attribute values.
+
+#### Syntax
+
+The basic syntax of an attribute selector is:
+```css
+[attribute] {
+    /* CSS properties */
+}
+```
+This selects all elements that have the specified attribute, regardless of its value.
+
+#### Examples
+
+- **Select elements with a specific attribute:**
+    ```css
+    [title] {
+        color: blue;
+    }
+    ```
+    This will apply the color blue to all elements that have a `title` attribute.
+
+- **Select elements with a specific attribute value:**
+    ```css
+    [type="text"] {
+        border: 1px solid black;
+    }
+    ```
+    This will apply a border to all input elements with the `type` attribute set to "text".
+
+- **Select elements with an attribute value containing a specific word:**
+    ```css
+    [class~="example"] {
+        font-size: 20px;
+    }
+    ```
+    This will apply a font size of 20px to all elements with a `class` attribute that contains the word "example".
+
+- **Select elements with an attribute value starting with a specific value:**
+    ```css
+    [href^="https"] {
+        color: green;
+    }
+    ```
+    This will apply the color green to all links (`<a>` elements) where the `href` attribute value starts with "https".
+
+- **Select elements with an attribute value ending with a specific value:**
+    ```css
+    [src$=".jpg"] {
+        border: 2px solid red;
+    }
+    ```
+    This will apply a red border to all images (`<img>` elements) where the `src` attribute value ends with ".jpg".
+
+- **Select elements with an attribute value containing a specific substring:**
+    ```css
+    [data-info*="part"] {
+        background-color: yellow;
+    }
+    ```
+    This will apply a yellow background to all elements with a `data-info` attribute that contains the substring "part".
+
+Attribute selectors provide a powerful way to target elements based on their attributes, allowing for more precise and flexible styling.
