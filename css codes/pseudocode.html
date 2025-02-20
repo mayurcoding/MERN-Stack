@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo Element</title>
     <style>
+        *{
+            background-color: rgba(9, 113, 164, 8);
+        }
         a[href^="#"]::before {
             content: "🔗";
             margin-right: 5px;
@@ -15,6 +18,28 @@
         input[type="email"] {
             background-color: #6650e4;
             color: red;
+        }
+
+        p {
+            font-size: 50px;
+            font-style: italic;
+            font-family: monospace;
+            font-weight: bolder;
+            text-transform: lowercase;
+        }
+        #r1 {
+            font-size: 1rem;
+            color: #372cd3
+        }
+        #r2 {
+            font-size: 2rem;
+            color: rgb(193, 0, 0);
+        }
+        #e1 {
+            font-size: 1em;
+        }
+        #e2 {
+            font-size: 2em;
         }
     </style>
 </head>
@@ -41,6 +66,14 @@
 <input type="location">
 
 
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+    form, by injected humour, or randomised words which don't look even slightly believable.</p>
+
+
+    <p id="r1"> Here is text</p>
+    <p id="e1"> Here is text</p>
+    <p id="r2"> Here is text</p>
+    <p id="e2"> Here is text</p>
 </body>
 
 </html>

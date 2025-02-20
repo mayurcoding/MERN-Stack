@@ -448,3 +448,344 @@ This selects all elements that have the specified attribute, regardless of its v
     This will apply a yellow background to all elements with a `data-info` attribute that contains the substring "part".
 
 Attribute selectors provide a powerful way to target elements based on their attributes, allowing for more precise and flexible styling.
+
+
+CSS fonts 
+
+### CSS Fonts
+
+CSS provides various properties to control the appearance of text on a webpage. Here are some common CSS font properties:
+
+- **`font-family`**: Specifies the font family for the text.
+    ```css
+    font-family: Arial, sans-serif;
+    ```
+
+- **`font-size`**: Specifies the size of the font.
+    ```css
+    font-size: 16px;
+    ```
+
+- **`font-weight`**: Specifies the weight (or boldness) of the font.
+    ```css
+    font-weight: bold;
+    ```
+
+- **`font-style`**: Specifies the style of the font (e.g., normal, italic, oblique).
+    ```css
+    font-style: italic;
+    ```
+
+- **`font-variant`**: Specifies whether the text should be displayed in small-caps.
+    ```css
+    font-variant: small-caps;
+    ```
+
+- **`line-height`**: Specifies the height of a line of text.
+    ```css
+    line-height: 1.5;
+    ```
+
+- **`letter-spacing`**: Specifies the space between characters.
+    ```css
+    letter-spacing: 2px;
+    ```
+
+- **`text-transform`**: Controls the capitalization of text.
+    ```css
+    text-transform: uppercase;
+    ```
+
+- **`text-align`**: Specifies the horizontal alignment of text.
+    ```css
+    text-align: center;
+    ```
+
+- **`text-decoration`**: Specifies the decoration added to text (e.g., underline, overline, line-through).
+    ```css
+    text-decoration: underline;
+    ```
+
+These properties allow you to customize the appearance of text on your webpage, making it more visually appealing and easier to read.
+
+
+
+### CSS Units
+
+CSS units are used to define the size of various elements, such as width, height, margin, padding, and font size. There are two main types of CSS units: absolute and relative.
+
+#### Absolute Units
+
+Absolute units are fixed and do not change based on other elements or the viewport. Common absolute units include:
+
+- **`px` (pixels)**: Represents a single dot on the screen.
+    ```css
+    width: 100px;
+    ```
+
+- **`pt` (points)**: Commonly used in print media, where 1pt is 1/72 of an inch.
+    ```css
+    font-size: 12pt;
+    ```
+
+- **`cm` (centimeters)**: Represents a length in centimeters.
+    ```css
+    margin: 2cm;
+    ```
+
+- **`mm` (millimeters)**: Represents a length in millimeters.
+    ```css
+    padding: 10mm;
+    ```
+
+- **`in` (inches)**: Represents a length in inches.
+    ```css
+    height: 1in;
+    ```
+
+#### Relative Units
+
+Relative units are based on the size of other elements or the viewport, making them more flexible and responsive. Common relative units include:
+
+- **`%` (percentage)**: Represents a percentage of the parent element's size.
+    ```css
+    width: 50%;
+    ```
+
+- **`em`**: Relative to the font size of the element. If the font size of the element is 16px, 1em is 16px.
+    ```css
+    padding: 2em;
+    ```
+
+- **`rem`**: Relative to the font size of the root element (`<html>`). If the root font size is 16px, 1rem is 16px.
+    ```css
+    margin: 1.5rem;
+    ```
+
+- **`vw` (viewport width)**: Represents a percentage of the viewport's width. 1vw is 1% of the viewport's width.
+    ```css
+    width: 50vw;
+    ```
+
+- **`vh` (viewport height)**: Represents a percentage of the viewport's height. 1vh is 1% of the viewport's height.
+    ```css
+    height: 50vh;
+    ```
+
+- **`vmin`**: Represents the smaller value of `vw` and `vh`.
+    ```css
+    font-size: 2vmin;
+    ```
+
+- **`vmax`**: Represents the larger value of `vw` and `vh`.
+    ```css
+    font-size: 2vmax;
+    ```
+
+Using the appropriate CSS units helps create responsive and adaptable web designs that work well on various devices and screen sizes.
+
+## CSS Colors
+
+CSS provides various ways to specify colors for elements on a webpage. Here are some common methods to define colors in CSS:
+
+### Named Colors
+
+CSS supports 140 named colors, such as `red`, `blue`, `green`, etc.
+
+```css
+color: red;
+background-color: blue;
+```
+
+### Hexadecimal Colors
+
+Hexadecimal colors are defined using a `#` followed by six hexadecimal digits (0-9, A-F). The first two digits represent the red component, the next two represent the green component, and the last two represent the blue component.
+
+```css
+color: #ff0000; /* Red */
+background-color: #0000ff; /* Blue */
+```
+
+### RGB Colors
+
+RGB colors are defined using the `rgb()` function, which takes three comma-separated values representing the red, green, and blue components (0-255).
+
+```css
+color: rgb(255, 0, 0); /* Red */
+background-color: rgb(0, 0, 255); /* Blue */
+```
+
+### RGBA Colors
+
+RGBA colors are similar to RGB colors but include an alpha channel to specify the opacity (0.0 to 1.0).
+
+```css
+color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+```
+
+### HSL Colors
+
+HSL colors are defined using the `hsl()` function, which takes three values: hue (0-360), saturation (0%-100%), and lightness (0%-100%).
+
+```css
+color: hsl(0, 100%, 50%); /* Red */
+background-color: hsl(240, 100%, 50%); /* Blue */
+```
+
+### HSLA Colors
+
+HSLA colors are similar to HSL colors but include an alpha channel to specify the opacity (0.0 to 1.0).
+
+```css
+color: hsla(0, 100%, 50%, 0.5); /* Semi-transparent red */
+background-color: hsla(240, 100%, 50%, 0.5); /* Semi-transparent blue */
+```
+
+Using these methods, you can define a wide range of colors to enhance the visual appeal of your web pages.
+
+## CSS Background Colors
+
+CSS background colors are used to set the background color of an element. You can use various methods to define background colors, similar to how you define text colors.
+
+### Setting Background Colors
+
+You can set the background color of an element using the `background-color` property.
+
+#### Named Colors
+
+```css
+background-color: red;
+```
+
+#### Hexadecimal Colors
+
+```css
+background-color: #ff0000; /* Red */
+```
+
+#### RGB Colors
+
+```css
+background-color: rgb(255, 0, 0); /* Red */
+```
+
+#### RGBA Colors
+
+```css
+background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+```
+
+#### HSL Colors
+
+```css
+background-color: hsl(0, 100%, 50%); /* Red */
+```
+
+#### HSLA Colors
+
+```css
+background-color: hsla(0, 100%, 50%, 0.5); /* Semi-transparent red */
+```
+
+### Applying Background Colors
+
+You can apply background colors to various HTML elements, such as `<div>`, `<p>`, `<header>`, etc.
+
+Example:
+```html
+<div style="background-color: lightblue;">
+    This div has a light blue background.
+</div>
+```
+
+Using background colors effectively can enhance the visual appeal and readability of your web pages.
+## CSS Tables
+
+CSS provides various properties to style HTML tables, making them more visually appealing and easier to read. Here are some common CSS properties used to style tables:
+
+### Table Properties
+
+- **`border`**: Sets the border for the table and its cells.
+    ```css
+    table, th, td {
+        border: 1px solid black;
+    }
+    ```
+
+- **`border-collapse`**: Specifies whether the table borders should be collapsed into a single border or separated.
+    ```css
+    table {
+        border-collapse: collapse;
+    }
+    ```
+
+- **`width`**: Sets the width of the table.
+    ```css
+    table {
+        width: 100%;
+    }
+    ```
+
+- **`padding`**: Sets the padding inside the table cells.
+    ```css
+    th, td {
+        padding: 10px;
+    }
+    ```
+
+- **`text-align`**: Sets the horizontal alignment of the text in the table cells.
+    ```css
+    th {
+        text-align: left;
+    }
+    ```
+
+- **`background-color`**: Sets the background color of the table cells.
+    ```css
+    th {
+        background-color: #f2f2f2;
+    }
+    ```
+
+### Example
+
+Here is an example of a styled table using CSS:
+
+```html
+<table>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+    </tr>
+    <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+    </tr>
+</table>
+```
+
+```css
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+```
+
+Using these CSS properties, you can create well-structured and visually appealing tables for your web pages.
