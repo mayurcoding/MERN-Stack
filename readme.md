@@ -992,3 +992,68 @@ CSS provides various properties to control the appearance and layout of text on 
     ```
 
 These properties allow you to customize the appearance and layout of text on your webpage, making it more visually appealing and easier to read.
+## CSS Nesting
+
+CSS Nesting allows you to nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. This makes your CSS more readable and maintainable.
+
+### Example
+
+Without nesting:
+```css
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+```
+
+With nesting:
+```css
+nav {
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+```
+
+CSS Nesting is not yet fully supported in all browsers, but it can be used with preprocessors like Sass.
+
+## CSS Container Queries
+
+CSS Container Queries allow you to apply styles to an element based on the size of its container, rather than the size of the viewport. This is useful for creating responsive components that adapt to their container's size.
+
+### Example
+
+```css
+.container {
+    container-type: inline-size;
+}
+
+@container (min-width: 500px) {
+    .item {
+        font-size: 1.5rem;
+    }
+}
+
+@container (max-width: 499px) {
+    .item {
+        font-size: 1rem;
+    }
+}
+```
+
+In this example, the `.item` element's font size changes based on the width of its container. Container Queries are a powerful tool for creating flexible, responsive designs.
