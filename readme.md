@@ -789,3 +789,206 @@ th {
 ```
 
 Using these CSS properties, you can create well-structured and visually appealing tables for your web pages.
+
+## CSS Icons
+
+CSS icons are used to add visual elements to your web pages, enhancing the user experience. You can use icon libraries like Font Awesome, Material Icons, or create custom icons using CSS.
+
+### Using Font Awesome
+
+Font Awesome is a popular icon library that provides a wide range of icons. To use Font Awesome, you need to include the Font Awesome CSS file in your HTML document.
+
+#### Example
+
+1. Include the Font Awesome CSS file in the `<head>` section of your HTML document:
+    ```html
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    ```
+
+2. Use the Font Awesome icons in your HTML:
+    ```html
+    <i class="fas fa-home"></i> Home
+    <i class="fas fa-envelope"></i> Contact
+    ```
+
+### Creating Custom Icons with CSS
+
+You can also create custom icons using CSS by styling HTML elements.
+
+#### Example
+
+1. Create an HTML element for the icon:
+    ```html
+    <div class="custom-icon"></div>
+    ```
+
+2. Style the icon using CSS:
+    ```css
+    .custom-icon {
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        mask: url('icon.svg') no-repeat center;
+        -webkit-mask: url('icon.svg') no-repeat center;
+    }
+    ```
+
+Using CSS icons can enhance the visual appeal of your web pages and provide a better user experience.
+
+## CSS Forms
+
+CSS forms are used to style HTML forms, making them more visually appealing and user-friendly. Here are some common CSS properties used to style forms:
+
+### Form Properties
+
+- **`width`**: Sets the width of the form elements.
+    ```css
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    ```
+
+- **`padding`**: Sets the padding inside the form elements.
+    ```css
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        padding: 10px;
+    }
+    ```
+
+- **`border`**: Sets the border for the form elements.
+    ```css
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    ```
+
+- **`background-color`**: Sets the background color of the form elements.
+    ```css
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        background-color: #f9f9f9;
+    }
+    ```
+
+- **`focus`**: Sets the styles for the form elements when they are focused.
+    ```css
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+        border-color: #4CAF50;
+        outline: none;
+    }
+    ```
+
+### Example
+
+Here is an example of a styled form using CSS:
+
+```html
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+```
+
+```css
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+```
+
+Using these CSS properties, you can create well-structured and visually appealing forms for your web pages.
+## CSS Text
+
+CSS provides various properties to control the appearance and layout of text on a webpage. Here are some common CSS text properties:
+
+### Text Properties
+
+- **`color`**: Sets the color of the text.
+    ```css
+    color: blue;
+    ```
+
+- **`text-align`**: Specifies the horizontal alignment of text.
+    ```css
+    text-align: center;
+    ```
+
+- **`text-decoration`**: Specifies the decoration added to text (e.g., underline, overline, line-through).
+    ```css
+    text-decoration: underline;
+    ```
+
+- **`text-transform`**: Controls the capitalization of text.
+    ```css
+    text-transform: uppercase;
+    ```
+
+- **`text-indent`**: Specifies the indentation of the first line of text.
+    ```css
+    text-indent: 50px;
+    ```
+
+- **`line-height`**: Specifies the height of a line of text.
+    ```css
+    line-height: 1.5;
+    ```
+
+- **`letter-spacing`**: Specifies the space between characters.
+    ```css
+    letter-spacing: 2px;
+    ```
+
+- **`word-spacing`**: Specifies the space between words.
+    ```css
+    word-spacing: 5px;
+    ```
+
+- **`text-shadow`**: Adds shadow to text.
+    ```css
+    text-shadow: 2px 2px 5px grey;
+    ```
+
+These properties allow you to customize the appearance and layout of text on your webpage, making it more visually appealing and easier to read.
