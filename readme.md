@@ -1057,3 +1057,107 @@ CSS Container Queries allow you to apply styles to an element based on the size 
 ```
 
 In this example, the `.item` element's font size changes based on the width of its container. Container Queries are a powerful tool for creating flexible, responsive designs.
+
+## CSS Positioning
+
+CSS positioning allows you to control the layout and positioning of elements on a webpage. There are several positioning methods available in CSS:
+
+### Static Positioning
+
+Static positioning is the default positioning method for HTML elements. Elements are positioned according to the normal document flow.
+
+```css
+.element {
+    position: static;
+}
+```
+
+### Relative Positioning
+
+Relative positioning allows you to position an element relative to its normal position. The element's original space is preserved in the document flow.
+
+```css
+.element {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+```
+
+### Absolute Positioning
+
+Absolute positioning allows you to position an element relative to its nearest positioned ancestor (an ancestor with a position other than static). If no such ancestor exists, the element is positioned relative to the initial containing block (usually the viewport).
+
+```css
+.element {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+```
+
+### Fixed Positioning
+
+Fixed positioning allows you to position an element relative to the viewport. The element stays in the same position even when the page is scrolled.
+
+```css
+.element {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+```
+
+### Sticky Positioning
+
+Sticky positioning is a hybrid of relative and fixed positioning. An element is positioned relative until it crosses a specified threshold, at which point it becomes fixed.
+
+```css
+.element {
+    position: sticky;
+    top: 0;
+}
+```
+
+### Example
+
+Here is an example demonstrating different positioning methods:
+
+```html
+<div class="static">Static</div>
+<div class="relative">Relative</div>
+<div class="absolute">Absolute</div>
+<div class="fixed">Fixed</div>
+<div class="sticky">Sticky</div>
+```
+
+```css
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+```
+
+Using these positioning methods, you can create complex and flexible layouts for your web pages.
