@@ -1161,3 +1161,155 @@ Here is an example demonstrating different positioning methods:
 ```
 
 Using these positioning methods, you can create complex and flexible layouts for your web pages.
+
+
+## CSS Float
+
+The CSS `float` property is used to position an element to the left or right within its container, allowing text and inline elements to wrap around it. It is commonly used for creating layouts with columns or for positioning images within text.
+
+### Syntax
+
+```css
+.element {
+    float: left; /* or right */
+}
+```
+
+### Values
+
+- `left`: The element floats to the left of its container.
+- `right`: The element floats to the right of its container.
+- `none`: The element does not float (default value).
+- `inherit`: The element inherits the float value from its parent.
+
+### Example
+
+```html
+<img src="image.jpg" alt="Example Image" class="float-left">
+<p>This is some text that will wrap around the floated image.</p>
+```
+
+```css
+.float-left {
+    float: left;
+    margin: 10px;
+}
+```
+
+In this example, the image will float to the left, and the text will wrap around it.
+
+### Clearing Floats
+
+When using floats, it is often necessary to clear the float to prevent subsequent elements from wrapping around the floated element. The `clear` property is used for this purpose.
+
+```css
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+```
+
+### Example
+
+```html
+<div class="clearfix">
+    <img src="image.jpg" alt="Example Image" class="float-left">
+    <p>This is some text that will wrap around the floated image.</p>
+</div>
+```
+
+Using the `clearfix` class ensures that the container properly contains the floated elements.
+
+The `float` property is a powerful tool for creating layouts, but it should be used with care to avoid layout issues. Modern CSS layout techniques like Flexbox and Grid are often preferred for more complex layouts.
+## CSS Display
+
+The CSS `display` property specifies the display behavior (the type of rendering box) of an element. It is one of the most important properties for controlling the layout of a webpage.
+
+### Common Display Values
+
+- **`block`**: The element is displayed as a block-level element. It starts on a new line and takes up the full width available.
+    ```css
+    display: block;
+    ```
+
+- **`inline`**: The element is displayed as an inline element. It does not start on a new line and only takes up as much width as necessary.
+    ```css
+    display: inline;
+    ```
+
+- **`inline-block`**: The element is displayed as an inline-level block container. It flows with text but can have a width and height.
+    ```css
+    display: inline-block;
+    ```
+
+- **`none`**: The element is not displayed at all (it is removed from the document flow).
+    ```css
+    display: none;
+    ```
+
+- **`flex`**: The element is displayed as a block-level flex container.
+    ```css
+    display: flex;
+    ```
+
+- **`grid`**: The element is displayed as a block-level grid container.
+    ```css
+    display: grid;
+    ```
+
+- **`inline-flex`**: The element is displayed as an inline-level flex container.
+    ```css
+    display: inline-flex;
+    ```
+
+- **`inline-grid`**: The element is displayed as an inline-level grid container.
+    ```css
+    display: inline-grid;
+    ```
+
+### Example
+
+Here is an example demonstrating different display values:
+
+```html
+<div class="block">Block Element</div>
+<span class="inline">Inline Element</span>
+<div class="inline-block">Inline-Block Element</div>
+<div class="none">None Element</div>
+<div class="flex">Flex Container</div>
+<div class="grid">Grid Container</div>
+```
+
+```css
+.block {
+    display: block;
+    background-color: lightblue;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+}
+
+.grid {
+    display: grid;
+    background-color: lightpink;
+}
+```
+
+Using the `display` property, you can control how elements are rendered and how they interact with other elements on the page.
